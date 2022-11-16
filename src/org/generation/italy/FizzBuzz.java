@@ -2,11 +2,20 @@ package org.generation.italy;
 
 
 
-public class FizzBuzz { 
-	int value = 0;
-	int k;
-	for (k=0;k<10;k++)
-		{System.out.println (k+1);
+public class FizzBuzz{
+public static void main(String[] Args) {
+	for (int x=1;x<=100; x++) {
+		if (x % 3 == 0 && x % 5 == 0) {
+			System.out.println("FizzBuzz");
+		}else if (x % 3 == 0) {
+			System.out.println("Fizz");
+		}else if (x % 5 == 0) {
+			System.out.println("Buzz");
+		}else {
+			System.out.println(x);
 		}
-		}
+	}
+	}
+	
 }
+
